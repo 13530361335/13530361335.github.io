@@ -5,15 +5,22 @@
   
 
   
-  <title>Hexo</title>
+  <title>Hexo撰写文章 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="一、创建文章在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题 1$ hexo new &quot;title&quot; 此时就会在source/_post文件夹中创建了一个文件，命名为：title.md，而这个文件就是将要发布到网站上的原始文件，记录文章内容，以下我们将要在这个文件中写下我们的第一篇博客 二、编写文章（基于Markdown）1. Markdown简介但是在我们正式">
+<meta name="keywords" content="hexo,md">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo撰写文章">
+<meta property="og:url" content="http://yoursite.com/2018/12/04/Hexo撰写文章/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、创建文章在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题 1$ hexo new &quot;title&quot; 此时就会在source/_post文件夹中创建了一个文件，命名为：title.md，而这个文件就是将要发布到网站上的原始文件，记录文章内容，以下我们将要在这个文件中写下我们的第一篇博客 二、编写文章（基于Markdown）1. Markdown简介但是在我们正式">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/2018/12/04/Hexo撰写文章/example.PNG">
+<meta property="og:updated_time" content="2018-12-04T12:46:32.921Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Hexo撰写文章">
+<meta name="twitter:description" content="一、创建文章在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题 1$ hexo new &quot;title&quot; 此时就会在source/_post文件夹中创建了一个文件，命名为：title.md，而这个文件就是将要发布到网站上的原始文件，记录文章内容，以下我们将要在这个文件中写下我们的第一篇博客 二、编写文章（基于Markdown）1. Markdown简介但是在我们正式">
+<meta name="twitter:image" content="http://yoursite.com/2018/12/04/Hexo撰写文章/example.PNG">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +67,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Hexo撰写文章" class="article article-type-post" itemscope="" itemprop="blogPost">
+        <section id="main"><article id="post-Hexo撰写文章" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/12/04/Hexo撰写文章/" class="article-date">
   <time datetime="2018-12-04T12:09:45.000Z" itemprop="datePublished">2018-12-04</time>
@@ -79,8 +84,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/04/Hexo撰写文章/">Hexo撰写文章</a>
+    <h1 class="article-title" itemprop="name">
+      Hexo撰写文章
     </h1>
   
 
@@ -144,12 +149,13 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: Title</span><br><span class="line">date: YYYY-MM-DD HH:MM:SS</span><br><span class="line">tags: [tag1, tag2, ...]</span><br><span class="line">categories: category</span><br></pre></td></tr></table></figure>
 <p>注意，属性和属性值之间必须有一个空格，否则会解析错误</p>
 <p>###（3）首页显示</p>
-<p>在Hexo框架博客的首页会显示文章的内容（默认显示文章的全部内容），如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简，只需在文章中使用</p>
-        
-          <p class="article-more-link">
-            <a href="/2018/12/04/Hexo撰写文章/#more">Read More</a>
-          </p>
-        
+<p>在Hexo框架博客的首页会显示文章的内容（默认显示文章的全部内容），如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简，只需在文章中使用 <a id="more"></a> 标志，表示只会显示标志前面的内容</p>
+<h1 id="三、部署发布"><a href="#三、部署发布" class="headerlink" title="三、部署发布"></a>三、部署发布</h1><p>在站点文件夹中打开 git bash，输入如下命令部署和发布文章</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<p><strong>建议</strong>：在使用命令 hexo g 部署之后，可以先使用 hexo s 运行本地站点，在浏览器输入地址<a href="http://lacolhost:4000/查看运行结果，检查没有错误后再使用命令" target="_blank" rel="noopener">http://lacolhost:4000/查看运行结果，检查没有错误后再使用命令</a> hexo d 发布</p>
+<hr>
+<p>作者：wsmrzx<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/wsmrzx/article/details/81478945" target="_blank" rel="noopener">https://blog.csdn.net/wsmrzx/article/details/81478945</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
+
       
     </div>
     <footer class="article-footer">
@@ -161,139 +167,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-这是一个新的博客" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/03/这是一个新的博客/" class="article-date">
-  <time datetime="2018-12-03T15:55:13.000Z" itemprop="datePublished">2018-12-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/03/这是一个新的博客/">这是一个新的博客</a>
-    </h1>
+    <a href="/2018/12/03/这是一个新的博客/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">这是一个新的博客</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>我现在写了一个段落，并且想在这个段落的某一个地方<img src="/2018/12/03/这是一个新的博客/a9e076ac-a046-48bf-9e6f-772d8bbef8d7.jpg" title="这是一个新的博客的图片的说明">引入一张图片</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/03/这是一个新的博客/" data-id="cjp9qn0x30005ukerruqcjbfr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-test" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/03/test/" class="article-date">
-  <time datetime="2018-12-03T15:39:03.312Z" itemprop="datePublished">2018-12-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/03/test/">Test Hexo</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><p><img src="/2018/12/03/test/a9e076ac-a046-48bf-9e6f-772d8bbef8d7.jpg" alt="lbxx"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/03/test/" data-id="cjp9qn0wy0002ukerfpnhpsom" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/12/02/hello-world/" class="article-date">
-  <time datetime="2018-12-02T14:28:17.081Z" itemprop="datePublished">2018-12-02</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/12/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/12/02/hello-world/" data-id="cjp9qn0wm0000uker7op5eb6j" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
