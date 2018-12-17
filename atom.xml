@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-12-04T13:01:31.633Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Joker Jing</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Markdown在线编辑器</title>
+    <link href="http://yoursite.com/2018/12/04/markdown-zai-xian-bian-ji-qi/"/>
+    <id>http://yoursite.com/2018/12/04/markdown-zai-xian-bian-ji-qi/</id>
+    <published>2018-12-04T12:56:37.000Z</published>
+    <updated>2018-12-04T13:01:31.633Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;欢迎使用-Markdown在线编辑器-MdEditor&quot;&gt;&lt;a href=&quot;#欢迎使用-Markdown在线编辑器-MdEditor&quot; class=&quot;headerlink&quot; title=&quot;欢迎使用 Markdown在线编辑器 MdEditor&quot;&gt;&lt;/a&gt;欢迎使用
+        
+      
+    
+    </summary>
+    
+      <category term="md" scheme="http://yoursite.com/categories/md/"/>
+    
+    
+      <category term="md" scheme="http://yoursite.com/tags/md/"/>
+    
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo撰写文章</title>
+    <link href="http://yoursite.com/2018/12/04/hexo-zhuan-xie-wen-zhang/"/>
+    <id>http://yoursite.com/2018/12/04/hexo-zhuan-xie-wen-zhang/</id>
+    <published>2018-12-04T12:09:45.000Z</published>
+    <updated>2018-12-04T12:46:32.921Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、创建文章&quot;&gt;&lt;a href=&quot;#一、创建文章&quot; class=&quot;headerlink&quot; title=&quot;一、创建文章&quot;&gt;&lt;/a&gt;一、创建文章&lt;/h1&gt;&lt;p&gt;在站点文件夹中打开git bash，输入如下命令创建文章，其中title为文章的标题&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;$ hexo new &amp;quot;title&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此时就会在source/_post文件夹中创建了一个文件，命名为：title.md，而这个文件就是将要发布到网站上的原始文件，记录文章内容，以下我们将要在这个文件中写下我们的第一篇博客&lt;/p&gt;
+&lt;h1 id=&quot;二、编写文章（基于Markdown）&quot;&gt;&lt;a href=&quot;#二、编写文章（基于Markdown）&quot; class=&quot;headerlink&quot; title=&quot;二、编写文章（基于Markdown）&quot;&gt;&lt;/a&gt;二、编写文章（基于Markdown）&lt;/h1&gt;&lt;h2 id=&quot;1-Markdown简介&quot;&gt;&lt;a href=&quot;#1-Markdown简介&quot; class=&quot;headerlink&quot; title=&quot;1. Markdown简介&quot;&gt;&lt;/a&gt;1. Markdown简介&lt;/h2&gt;&lt;p&gt;但是在我们正式写下我们文章的第一个文字前，我们需要了解一下什么是Markdown：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;基于markdown的简洁性，它已经成为了目前世界上最流行的用于书写博客的语言&lt;/p&gt;
+&lt;h2 id=&quot;2-Markdown语法&quot;&gt;&lt;a href=&quot;#2-Markdown语法&quot; class=&quot;headerlink&quot; title=&quot;2. Markdown语法&quot;&gt;&lt;/a&gt;2. Markdown语法&lt;/h2&gt;&lt;p&gt;在了解markdown语法之前，博主十分强烈的推荐大家一款简洁易用的markdown编辑器——Typora，按照官方的说法就是&lt;strong&gt;简单而强大&lt;/strong&gt;，它不仅支持原生的markdown语法，也支持对应的快捷键，更重要的是它还可以实时预览 ，简直不要太优秀了。这里附上Typora的下载地址：&lt;a href=&quot;https://www.typora.io/，有兴趣的小伙伴可以下载来试试哦&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.typora.io/，有兴趣的小伙伴可以下载来试试哦&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;好，下面开始进入正题，介绍一些常用的markdown语法&lt;/p&gt;
+&lt;p&gt;###（1）标题&lt;/p&gt;
+&lt;p&gt;Markdown语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;# 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Typora快捷键：&lt;br&gt;Ctrl+1：一级标题&lt;br&gt;Ctrl+2：二级标题&lt;br&gt;Ctrl+3：三级标题&lt;br&gt;Ctrl+4：四级标题&lt;br&gt;Ctrl+5：五级标题&lt;br&gt;Ctrl+6 ：六级标题&lt;br&gt;Ctrl+0：段落&lt;/p&gt;
+&lt;p&gt;###（2）粗体、斜体、删除线和下划线&lt;/p&gt;
+&lt;p&gt;Markdown语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;*斜体*
+**粗体**
+***加粗斜体***
+~~删除线~~
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Typora快捷键：&lt;br&gt;Ctrl+I：斜体&lt;br&gt;Ctrl+B：粗体&lt;br&gt;Ctrl+U：下划线&lt;br&gt;Alt+Shift+5：删除线&lt;/p&gt;
+&lt;p&gt;###（3）超链接&lt;/p&gt;
+&lt;p&gt;Markdown语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;[链接文字](链接地址 &amp;quot;链接描述&amp;quot;)
+例如：[我的博客](https://forwhfang.github.io/ &amp;quot;我的博客&amp;quot;)
+
+&amp;lt;链接地址&amp;gt;
+例如：&amp;lt;https://forwhfang.github.io&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Typora快捷键：Ctrl+K&lt;/p&gt;
+&lt;p&gt;###（4）引用&lt;/p&gt;
+&lt;p&gt;Markdown语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;&amp;gt; 文字引用
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Typora快捷键：Ctrl+Shift+Q&lt;/p&gt;
+&lt;p&gt;###（5）代码&lt;/p&gt;
+&lt;p&gt;Markdown语法：（为了方便起见，这里将使用字符a代替反引号`）&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;a单行代码a
+
+aaa
+多行代码
+多行代码
+aaa
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Typora快捷键：Ctrl+Shift+`&lt;/p&gt;
+&lt;p&gt;###（6）分割线&lt;/p&gt;
+&lt;p&gt;Markdown语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;---
+
+***
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;以上两种方法均可以表示为分割线&lt;/p&gt;
+&lt;p&gt;###（7）列表&lt;/p&gt;
+&lt;p&gt;Markdown语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;* 列表项
+
+- 列表项
+
++ 列表项
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;以上三种方法均可以表示为列表&lt;/p&gt;
+&lt;p&gt;###（8）表格&lt;/p&gt;
+&lt;p&gt;Markdown语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;表头1|表头2
+-|-|-
+内容11|内容12
+内容21|内容22
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Typora快捷键：Ctrl+T （这里就充分体现了Typora快捷键的方便性了）&lt;/p&gt;
+&lt;p&gt;###（9）图片&lt;/p&gt;
+&lt;p&gt;Markdown语法：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;![图片文字] (图片地址 &amp;quot;图片描述&amp;quot;)
+例如：![示例图片] (https://www.example.com/example.PNG &amp;quot;示例图片&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Typora快捷键：Ctrl+Shift+I&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;说明&lt;/strong&gt;：在Hexo中插入图片时，请按照以下步骤进行设置&lt;/p&gt;
+&lt;p&gt;（1）将站点配置文件中的 post_asset_folder 选项设置成 true&lt;/p&gt;
+&lt;p&gt;（2）在站点文件夹中打开 git bash，输入命令 npm install hexo-asset-image –save 安装插件&lt;/p&gt;
+&lt;p&gt;（3）此时使用 hexo new title 创建文章时，将同时在source/_post文件夹中生成一个与title同名的文件夹，我们只需将待添加的图片放进此文件夹中，然后在文章中通过Markdown语法进行引用即可，例如，在资源文件夹（就是那个与title同名的文件夹）中添加了图片example.PNG，则可以在对应的文章中使用语句 &lt;img src=&quot;/2018/12/04/hexo-zhuan-xie-wen-zhang/example.PNG&quot; alt=&quot;示例图片&quot; title=&quot;示例图片&quot;&gt; 添加图片&lt;/p&gt;
+&lt;h2 id=&quot;3-其他操作&quot;&gt;&lt;a href=&quot;#3-其他操作&quot; class=&quot;headerlink&quot; title=&quot;3. 其他操作&quot;&gt;&lt;/a&gt;3. 其他操作&lt;/h2&gt;&lt;p&gt;###（1）模板设置&lt;/p&gt;
+&lt;p&gt;当我们使用命令 hexo new “title” 去创建我们的文章时，Hexo会根据/scaffolds/post.md文件对新建文件进行初始化，换言之，/scaffolds/post.md文件就是创建新文章的模板，所以我们可以修改它来适应自己的写作习惯，一个简单的示例如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;title: {{ title }}
+date: {{ date }}
+tags: 
+categories: 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;###（2）头部设置&lt;/p&gt;
+&lt;p&gt;在博客文章的开头会有对文章的说明文字，叫做文章头部，文章的头部除了可以设置文章标题、书写日期等基础信息外，还可以对文章添加标签、分类等，一个简单的示例如下&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;bash&quot;&gt;title: Title
+date: YYYY-MM-DD HH:MM:SS
+tags: [tag1, tag2, ...]
+categories: category
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;注意，属性和属性值之间必须有一个空格，否则会解析错误&lt;/p&gt;
+&lt;p&gt;###（3）首页显示&lt;/p&gt;
+&lt;p&gt;在Hexo框架博客的首页会显示文章的内容（默认显示文章的全部内容），如果当文章太长的时候就会显得十分冗余，所以我们有必要对其进行精简，只需在文章中使用&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="http://yoursite.com/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+      <category term="md" scheme="http://yoursite.com/tags/md/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Navicat Premium 12.1.11注册</title>
+    <link href="http://yoursite.com/2018/12/04/navicat12.1.11-license/"/>
+    <id>http://yoursite.com/2018/12/04/navicat12.1.11-license/</id>
+    <published>2018-12-04T12:09:45.000Z</published>
+    <updated>2018-12-15T16:16:44.669Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Navicat-Keygen&quot;&gt;&lt;a href=&quot;#Navicat-Keygen&quot; class=&quot;headerlink&quot; title=&quot;Navicat Keygen&quot;&gt;&lt;/a&gt;Navicat
+        
+      
+    
+    </summary>
+    
+      <category term="Navicat" scheme="http://yoursite.com/categories/Navicat/"/>
+    
+    
+      <category term="Navicat" scheme="http://yoursite.com/tags/Navicat/"/>
+    
+      <category term="License" scheme="http://yoursite.com/tags/License/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>这是一个新的博客</title>
+    <link href="http://yoursite.com/2018/12/03/zhe-shi-yi-ge-xin-de-bo-ke/"/>
+    <id>http://yoursite.com/2018/12/03/zhe-shi-yi-ge-xin-de-bo-ke/</id>
+    <published>2018-12-03T15:55:13.000Z</published>
+    <updated>2018-12-04T13:33:08.464Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;我现在写了一个段落，并且想在这个段落的某一个地方&lt;img src=&quot;/2018/12/03/zhe-shi-yi-ge-xin-de-bo-ke/a9e076ac-a046-48bf-9e6f-772d8bbef8d7.jpg&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Test Hexo</title>
+    <link href="http://yoursite.com/2018/12/03/test/"/>
+    <id>http://yoursite.com/2018/12/03/test/</id>
+    <published>2018-12-03T15:39:03.312Z</published>
+    <updated>2018-12-03T15:40:50.344Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/12/02/hello-world/"/>
+    <id>http://yoursite.com/2018/12/02/hello-world/</id>
+    <published>2018-12-02T14:28:17.081Z</published>
+    <updated>2018-12-02T14:28:17.081Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
